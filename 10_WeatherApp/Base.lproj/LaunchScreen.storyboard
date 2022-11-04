@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4rD-wF-M3d"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCk-Vl-wtM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="wCg-EY-3Xg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-6I-CeF">
+                                <rect key="frame" x="147" y="79" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1vK-PS-Od5"/>
+                                    <constraint firstAttribute="height" constant="120" id="gwI-hx-cte"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-9p-fZU">
+                                <rect key="frame" x="139" y="215" width="136" height="28"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wCg-EY-3Xg" secondAttribute="bottom" id="2dm-XA-EME"/>
+                            <constraint firstItem="b3N-6I-CeF" firstAttribute="top" secondItem="4rD-wF-M3d" secondAttribute="bottom" constant="35" id="BkR-lm-GB1"/>
+                            <constraint firstItem="wCg-EY-3Xg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NDb-yo-GL0"/>
+                            <constraint firstItem="b3N-6I-CeF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WIf-aI-xBs"/>
+                            <constraint firstItem="yYE-9p-fZU" firstAttribute="top" secondItem="b3N-6I-CeF" secondAttribute="bottom" constant="16" id="WY2-D3-yUV"/>
+                            <constraint firstAttribute="trailing" secondItem="wCg-EY-3Xg" secondAttribute="trailing" id="bvM-CX-TOR"/>
+                            <constraint firstItem="wCg-EY-3Xg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qQf-Zb-eJp"/>
+                            <constraint firstItem="yYE-9p-fZU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yck-yc-Nzm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchBackground" width="524" height="1024"/>
+        <image name="LaunchImage" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

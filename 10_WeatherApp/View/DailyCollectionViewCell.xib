@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.otf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dailyItem" id="gTV-IL-0wX" customClass="DailyCollectionViewCell" customModule="_0_WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWL-Eb-iLg">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="108"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRp-2X-GJo">
+                                <rect key="frame" x="14.5" y="8" width="43" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nXZ-jH-HLV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-vy-sdR">
+                                <rect key="frame" x="20" y="64" width="32" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="1An-T0-wsF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-im-Pwa">
+                                <rect key="frame" x="24" y="36" width="24" height="24"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Ng0-EZ-JIw"/>
+                                    <constraint firstAttribute="height" constant="24" id="hkf-ZQ-hzL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slh-X2-hGT">
+                                <rect key="frame" x="20" y="84" width="32" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ge2-Fj-Jo1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbP-im-Pwa" firstAttribute="top" secondItem="YRp-2X-GJo" secondAttribute="bottom" constant="8" id="0OZ-4C-uNO"/>
+                            <constraint firstItem="YRp-2X-GJo" firstAttribute="top" secondItem="gWL-Eb-iLg" secondAttribute="top" constant="8" id="4dy-Zd-Vnu"/>
+                            <constraint firstItem="Slh-X2-hGT" firstAttribute="top" secondItem="GcW-vy-sdR" secondAttribute="bottom" constant="4" id="Bfa-Gx-50e"/>
+                            <constraint firstItem="GcW-vy-sdR" firstAttribute="top" secondItem="dbP-im-Pwa" secondAttribute="bottom" constant="4" id="Glr-nx-HJ3"/>
+                            <constraint firstItem="Slh-X2-hGT" firstAttribute="centerX" secondItem="dbP-im-Pwa" secondAttribute="centerX" id="PAg-pI-7eM"/>
+                            <constraint firstItem="GcW-vy-sdR" firstAttribute="centerX" secondItem="dbP-im-Pwa" secondAttribute="centerX" id="PBy-Ur-e3u"/>
+                            <constraint firstItem="dbP-im-Pwa" firstAttribute="centerX" secondItem="YRp-2X-GJo" secondAttribute="centerX" id="ihN-yE-4OT"/>
+                            <constraint firstAttribute="height" constant="108" id="uiw-da-MTw"/>
+                            <constraint firstItem="YRp-2X-GJo" firstAttribute="centerX" secondItem="gWL-Eb-iLg" secondAttribute="centerX" id="vxk-Rw-JCu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gWL-Eb-iLg" secondAttribute="bottom" id="AkI-L6-jRg"/>
+                <constraint firstItem="gWL-Eb-iLg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MyW-Rp-bsN"/>
+                <constraint firstAttribute="trailing" secondItem="gWL-Eb-iLg" secondAttribute="trailing" id="h3c-eg-QLp"/>
+                <constraint firstItem="gWL-Eb-iLg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qeb-nF-JiY"/>
+            </constraints>
+            <size key="customSize" width="72" height="200"/>
+            <connections>
+                <outlet property="chanceOfRainLbl" destination="Slh-X2-hGT" id="61o-30-Pai"/>
+                <outlet property="degreeLbl" destination="GcW-vy-sdR" id="Bit-aL-DVP"/>
+                <outlet property="weatherIcon" destination="dbP-im-Pwa" id="i0F-Ad-sbr"/>
+                <outlet property="weekDayLbl" destination="YRp-2X-GJo" id="USp-GN-z3w"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

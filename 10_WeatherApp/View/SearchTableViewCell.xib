@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.otf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="100" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="_0_WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guc-Yj-oJJ">
+                        <rect key="frame" x="8" y="8" width="384" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-3O-zNx">
+                                <rect key="frame" x="16" y="21" width="42.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Zbt-ph-dnP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-8X-JRV">
+                                <rect key="frame" x="16" y="45" width="31.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="HbW-GA-xES"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EAj-tB-aWE">
+                                <rect key="frame" x="322" y="16" width="30" height="30"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="NWy-10-Dyv"/>
+                                    <constraint firstAttribute="height" constant="30" id="qBK-9u-Ava"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2u-Zu-NXu">
+                                <rect key="frame" x="321.5" y="50" width="31.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Kco-be-5cb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EAj-tB-aWE" firstAttribute="centerY" secondItem="AJ7-3O-zNx" secondAttribute="centerY" id="2YU-cQ-d6m"/>
+                            <constraint firstAttribute="height" constant="82" id="2wT-qm-d2d"/>
+                            <constraint firstItem="EAj-tB-aWE" firstAttribute="top" secondItem="guc-Yj-oJJ" secondAttribute="top" constant="16" id="IaD-8G-jyo"/>
+                            <constraint firstItem="AJ7-3O-zNx" firstAttribute="leading" secondItem="guc-Yj-oJJ" secondAttribute="leading" constant="16" id="Q6c-Lh-aB7"/>
+                            <constraint firstItem="BUc-8X-JRV" firstAttribute="top" secondItem="AJ7-3O-zNx" secondAttribute="bottom" constant="4" id="Wlb-tN-8Mb"/>
+                            <constraint firstAttribute="trailing" secondItem="EAj-tB-aWE" secondAttribute="trailing" constant="32" id="fqf-bn-8fJ"/>
+                            <constraint firstItem="C2u-Zu-NXu" firstAttribute="top" secondItem="EAj-tB-aWE" secondAttribute="bottom" constant="4" id="hFf-bP-1gr"/>
+                            <constraint firstItem="C2u-Zu-NXu" firstAttribute="centerX" secondItem="EAj-tB-aWE" secondAttribute="centerX" id="jZq-Ig-gpN"/>
+                            <constraint firstItem="BUc-8X-JRV" firstAttribute="leading" secondItem="AJ7-3O-zNx" secondAttribute="leading" id="q4F-1x-moa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="guc-Yj-oJJ" secondAttribute="bottom" constant="8" id="6j9-Ty-Jww"/>
+                    <constraint firstItem="guc-Yj-oJJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6ud-rS-DYl"/>
+                    <constraint firstItem="guc-Yj-oJJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="S7Z-pf-x7k"/>
+                    <constraint firstAttribute="trailing" secondItem="guc-Yj-oJJ" secondAttribute="trailing" constant="8" id="dPo-Fm-d6u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellView" destination="guc-Yj-oJJ" id="ebD-OL-w7W"/>
+                <outlet property="degreeLbl" destination="BUc-8X-JRV" id="cVu-DO-9Tk"/>
+                <outlet property="locationLbl" destination="AJ7-3O-zNx" id="z7V-6y-8U3"/>
+                <outlet property="weatherIcon" destination="EAj-tB-aWE" id="Gnz-7y-dgJ"/>
+                <outlet property="weatherLbl" destination="C2u-Zu-NXu" id="pJa-Xh-lHQ"/>
+            </connections>
+            <point key="canvasLocation" x="308.69565217391306" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
